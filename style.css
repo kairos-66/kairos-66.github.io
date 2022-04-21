@@ -1,0 +1,91 @@
+:root {
+    --main-color: #5e17eb;
+    --black: black;
+    --gray: #2e2e2e;
+    --white: white;
+    --element-padding: 7px;
+    --main-indent: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--main-color);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    padding: var(--main-indent);
+}
+
+header, main, footer {
+    max-width: 100%;
+    width: 500px;
+    margin: 0 auto;
+    
+}
+
+header, main {
+    border: 6px solid var(--black);;
+    background: var(--white);;
+    padding: 16px;
+}
+
+main, footer {
+    margin-top: var(--main-indent);
+}
+
+footer {
+    color: var(--white);
+}
+
+h1 {
+    margin: 0;
+}
+
+h1 a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+#information-list {
+    padding: 0;
+    margin: 0;
+}
+
+#location {
+    padding-bottom: var(--element-padding);
+}
+
+#information-list .element {
+    list-style: none;
+    border-bottom: 1px solid var(--black);
+}
+
+.element a {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    padding: var(--element-padding) 0;
+    text-decoration: none;
+}
+
+.element span {
+    width: 100px;
+}
+
+.element i {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+}
+.element i:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
